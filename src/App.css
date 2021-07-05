@@ -1,0 +1,147 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+/* body{
+  height:100vh;
+} */
+.header{
+  /* border:none; */
+  position: sticky;
+  top:0;
+  left:0;
+  height:10vh;
+  width:100%;
+  background-color: teal;
+  /* margin:auto; */
+}
+.searchArea{
+  position:absolute;
+  display:flex;
+  align-items: center;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width:60%;
+  height:80%;
+  /* background-color:springgreen ; */
+}
+.searchBar{
+  flex:3;
+  width:80%;
+  padding:7px;
+  font-size:18px;
+  border:none;
+  outline:none;
+}
+.submit{
+  flex:0;
+  width: 20%;
+  font-size:18px;
+  font-weight: 500;
+  padding:7px;
+  border:none;
+  outline:none;
+  cursor:pointer;
+  background: cornflowerblue;
+}
+.buttons{
+  display:flex;
+  flex:1;
+  margin:10px 50px;
+  /* background-color: sienna; */
+  height:80%;
+}
+.imageBtn,.textBtn{
+  padding:5px;
+  width:50%;
+  border:none;
+  margin:5px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.activeBtn{
+  background-color: sandybrown;
+  /* color:whitesmoke; */
+}
+
+.contentBody{
+  display:flex;
+  flex-wrap: nowrap;
+  height: 90vh;
+  overflow:hidden;
+}
+.filters{
+  flex:1;
+  height:100vh;
+  background:seagreen;
+  /* position: sticky; */
+  /* top:0;
+  left:0; */
+}
+
+.container{
+  flex:4;
+  background: rgba(0,0,0,.4);
+  overflow-y: auto;
+}
+
+
+
+
+
+
+
+
+.imageContainer{
+  width:100%;
+  line-height: 0;
+   
+  -webkit-column-count: 4;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    4;
+  -moz-column-gap:      0px;
+  column-count:         4;
+  column-gap:           0px;  
+}
+.imageContainer img{
+  width: 100% !important;
+  height: auto !important;
+}
+@media (max-width: 1200px) {
+  .imageContainer {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  .imageContainer {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  .imageContainer {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  .imageContainer {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
+
+
+.textContainer{
+  background-color: seashell;
+  padding:10px;
+}
